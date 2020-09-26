@@ -1,0 +1,40 @@
+{
+  "name": "typescript-starter",
+  "version": "1.0.0",
+  "description": "A simple starter for typescript",
+  "main": "dist/index.js",
+  "bin": {
+    "typescript-starter": "dist/bin.js"
+  },
+  "scripts": {
+    "test": "jest",
+    "build": "tsc -p tsconfig.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wbhob/typescript-starter.git"
+  },
+  "author": "Wilson Hobbs <wilsonhobbs1@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wbhob/typescript-starter/issues"
+  },
+  "homepage": "https://github.com/wbhob/typescript-starter#readme",
+  "devDependencies": {
+    "@types/jest": "^24.0.11",
+    "@types/node": "^11.12.2",
+    "husky": "^1.3.1",
+    "jest": "^24.5.0",
+    "prettier": "^1.16.4",
+    "prettier-check": "^2.0.0",
+    "pretty-quick": "^1.10.0",
+    "ts-jest": "^24.0.1",
+    "tslint": "^5.14.0",
+    "typescript": "^3.4.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}
