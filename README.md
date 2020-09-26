@@ -1,22 +1,36 @@
-# typescript-starter
+# wap
 
-A simple starter for Node TypeScript projects with tests, CI, and scripts.
+Query lyrics from Cardi B's 2020 hit song "WAP" in Node.JS.
 
-## Usage
+## Basic Usage
 
 ```typescript
-import { sum } from 'typescript-starter'
+import wap from 'wap'
 
-sum(1, 5) // returns 6
+const myLyric = wap().random() // get a random lyric
+const lyricArray = wap().array() // get an array of WAP lyrics
+```
+
+## Content Filter
+
+Filter the lyrics for just clean ones. You can also filter for just the filthy ones 👀
+
+Each one returns another wap() object, so you can chain the calls together.
+
+```typescript
+import wap from 'wap'
+
+const myLyric = wap().random() // get a random lyric
+const lyricArray = wap().array() // get an array of WAP lyrics
 ```
 
 ## Contributing
 
-If you want to contribute, implement it in TypeScript in the `src/` directory. Add a test file in `__tests__/` to make sure it works properly – you can just copy one of the other testing files and substitute in your sorting algorithm.
+Thank you for your contribution. Please implement it in TypeScript in the `src/` directory. Add unit tests in `__tests__/` to make sure it works properly. Submit a pull request on GitHub with a description of your changes.
 
 ## License
 
-This project is licensed under the [MIT License](./LICENSE), so you're free to use it as you please with attribution and a link back to this project (though writing your own implementation would not be terribly difficult).
+This project is licensed under the [MIT License](./LICENSE).
 
 ## Credits
 
