@@ -1,6 +1,6 @@
 {
   "name": "wap.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Lyrics from Cardi B's WAP in Node.JS",
   "main": "dist/index.js",
   "bin": {
