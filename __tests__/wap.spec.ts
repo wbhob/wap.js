@@ -1,4 +1,4 @@
-import wap from '../src/wap'
+import wap from '../src'
 import { isClean, isFilthy } from '../src/content-filter'
 
 describe('wap()', () => {

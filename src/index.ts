@@ -1,1 +1,3 @@
-export { sum } from './sum'
+import wap from './wap'
+
+export default wap

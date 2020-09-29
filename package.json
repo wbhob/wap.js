@@ -1,7 +1,7 @@
 {
-  "name": "wap",
+  "name": "wap.js",
   "version": "1.0.0",
-  "description": "A simple starter for typescript",
+  "description": "Lyrics from Cardi B's WAP in Node.JS",
   "main": "dist/index.js",
   "bin": {
     "wap": "dist/bin.js"
@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wbhob/wap.git"
+    "url": "git+https://github.com/wbhob/wap.js.git"
   },
   "author": "Wilson Hobbs <wilsonhobbs1@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wbhob/wap/issues"
+    "url": "https://github.com/wbhob/wap.js/issues"
   },
-  "homepage": "https://github.com/wbhob/wap#readme",
+  "homepage": "https://github.com/wbhob/wap.js#readme",
   "devDependencies": {
     "@types/jest": "^24.0.11",
     "@types/node": "^11.12.2",

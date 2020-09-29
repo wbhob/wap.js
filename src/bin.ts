@@ -1,11 +1,17 @@
-import { sum } from './sum'
+import wap from './'
 
-let result;
-console.log(typeof (+process.argv[1]));
+let command = process.argv[2] ? process.argv[2] : process.argv[1]
 
-if (process.argv[3]) {
-  result = sum(+process.argv[2], +process.argv[3])
+let result
+
+if (command == 'array') {
+  result = wap()
+    .array()
+    .join('\n')
+} else if (command == 'random') {
+  result = wap().random()
 } else {
-  result = sum(+process.argv[1], +process.argv[2])
+  result = 'Unknown command. Try `wap array` or `wap random`'
 }
+
 console.log(result)
