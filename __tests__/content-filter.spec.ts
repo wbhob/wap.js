@@ -1,4 +1,4 @@
-import { isClean, isFilthy } from '../src/content-filter'
+import { isClean, isFilthy, isWhiteFriendly } from '../src/filters'
 
 describe('isFilthy()', () => {
   it('should mark one filthy word as filthy', () => {
@@ -33,5 +33,23 @@ describe('isClean()', () => {
 
   it('should recognize clean words', () => {
     expect(isClean('Now from the top, make it drop')).toEqual(true)
+  })
+})
+
+describe('isWhiteFriendly()', () => {
+  it('should mark one filthy word as unclean', () => {
+    expect(isWhiteFriendly('nigga')).toEqual(false)
+  })
+
+  // it('should mark multiple filthy words as unclean', () => {
+  //   expect(isWhiteFriendly('pussy shit')).toEqual(false)
+  // })
+
+  it('should detect filthy words in context', () => {
+    expect(isWhiteFriendly("run down on him 'fore I have a nigga runnin' me")).toEqual(false)
+  })
+
+  it('should recognize clean words', () => {
+    expect(isWhiteFriendly('Now get your boots and your coat for this wet-ass pussy (Ah, ah, ah)')).toEqual(true)
   })
 })

@@ -1,5 +1,5 @@
 import wap from '../src'
-import { isClean, isFilthy } from '../src/content-filter'
+import { isClean, isFilthy } from '../src/filters'
 
 describe('wap()', () => {
   describe('maxLength()', () => {
