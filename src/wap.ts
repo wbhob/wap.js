@@ -1,5 +1,5 @@
+import { isClean, isFilthy, isWhiteFriendly } from './filters'
 import { lyrics } from './lyrics'
-import { isClean, isFilthy } from './content-filter'
 
 class WAP {
   constructor(private lyricsArray: string[]) {}
@@ -29,6 +29,15 @@ class WAP {
    */
   public filthy(): WAP {
     const lyrics = this.lyricsArray.filter(lyric => isFilthy(lyric))
+
+    return new WAP(lyrics)
+  }
+
+  /**
+   * Avoid controversy by taking out words that white people aren't allowed to use
+   */
+  public whitePeopleMode(): WAP {
+    const lyrics = this.lyricsArray.filter(lyric => isWhiteFriendly(lyric))
 
     return new WAP(lyrics)
   }
